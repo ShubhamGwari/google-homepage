@@ -4,21 +4,24 @@
     <title>
         Google
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <style>
-        
-        nav{
+        .main {
+            text-align: center;
+        }
+
+        nav {
             position: absolute;
-            width:99.6%;
-            top:0;
+            width: 99.6%;
+            top: 0;
         }
 
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow:hidden;
+            overflow: hidden;
             background-color: white;
         }
 
@@ -29,19 +32,21 @@
         li a {
             display: block;
             color: black;
-            font-size:20px;
+            font-size: 18px;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         li a:hover {
-            text-shadow:2px 2px 2px silver;
-            
+            text-shadow: 2px 2px 2px silver;
+
+
+
         }
 
         #image {
-            padding-top: 120px;
+            padding-top: 95px;
             text-align: center;
         }
 
@@ -62,8 +67,8 @@
             margin-left: 15px;
             width: 175px;
             height: 35px;
-            font-weight: bolder;
-            font-size: 20px;
+            opacity: 60%;
+            font-size: 18px;
             border: 2px solid hsl(0, 0%, 90%);
             border-radius: 30px;
             background-color: hsl(0, 0%, 98%);
@@ -74,18 +79,24 @@
             padding-left: 30px;
             text-align: left;
             font-size: 20px;
-            font-weight: bolder;
-            border: 2px solid black;
+            font-weight: normal;
+            border: 1px solid rgb(206, 204, 204);
             border-radius: 20px;
         }
 
         input:hover {
-            box-shadow: 3px 3px 12px grey;
+            box-shadow: 1px 1px 1px lightgray;
+            border: 1px solid rgb(189, 185, 185);
+            opacity: 100%;
         }
+
         footer {
             position: absolute;
-            width:99%;
-            bottom:0;
+            width: 99%;
+            bottom: 0;
+        }
+        #links a{
+            margin-left:8px;
         }
     </style>
 </head>
@@ -101,7 +112,7 @@
                 </div>
                 <div style="float: right; margin-right:10px;">
                     <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Imges</a></li>
+                    <li><a href="#">Images</a></li>
                     <li><a href="#">Apps</a></li>
                     <li><a href="#">Sign in</a></li>
                 </div>
@@ -111,28 +122,41 @@
             <img id="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         </div>
         <form>
-            <input type="text" id="search" placeholder="Search here..." size="90">
+            <input type="text" id="search" placeholder="Search here..." size="55">
             <div class="button">
                 <input type="submit" value="Search">
                 <input type="submit" value="I'm feeling lucky">
             </div>
         </form>
-    
-    <footer>
-        <ul>
-            <div style="margin-left:5px;">
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">How Search works</a></li>
-            </div>
-            <div style="float: right; margin-right:10px;">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Settings</a></li>
-            </div>
-        </ul>
-    </footer>
-</main>
+
+        <div id="links">Google offered in:
+            <a href="#">हिन्दी</a>
+            <a href="#">বাংলা</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">मराठी</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">ગુજરાતી</a>
+            <a href="#">ಕನ್ನಡ</a>
+            <a href="#">മലയാളം</a>
+            <a href="#">ਪੰਜਾਬੀ</a>
+        </div>
+
+
+        <footer>
+            <ul>
+                <div style="margin-left:5px;">
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </div>
+                <div style="float: right; margin-right:10px;">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </div>
+            </ul>
+        </footer>
+    </main>
 </body>
 
 </html>
